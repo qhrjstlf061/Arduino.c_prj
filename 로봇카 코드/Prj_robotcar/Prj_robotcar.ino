@@ -78,45 +78,45 @@ void loop()
     forward();
   }
   
-//  char cmd = bluetoothSerial.read();
-//  switch (cmd)
-//  {
-//    case 'f':
-//    digitalWrite(led_1,LOW);
-//    analogWrite(A_1A, motorASpeed);
-//    analogWrite(A_1B, 0);
-//    analogWrite(B_1A, motorBSpeed);
-//    analogWrite(B_1B, 0);
-//    break;
-//    case 'b':
-//    digitalWrite(led_1,LOW);
-//    analogWrite(A_1A, 0);
-//    analogWrite(A_1B, motorASpeed);
-//    analogWrite(B_1A, 0);
-//    analogWrite(B_1B, motorBSpeed);
-//    break;
-//    case 'r':
-//    digitalWrite(led_1,HIGH);
-//    analogWrite(A_1A, 0);
-//    analogWrite(A_1B, 0);
-//    analogWrite(B_1A, motorBSpeed);
-//    analogWrite(B_1B, 0);
-//    break;
-//    case 'l':
-//    analogWrite(A_1A, motorASpeed);
-//    analogWrite(A_1B, 0);
-//    analogWrite(B_1A, 0);
-//    analogWrite(B_1B, 0);
-//    digitalWrite(led_1,HIGH);
-//    break;
-//    case 's':
-//    analogWrite(A_1A, 0);
-//    analogWrite(A_1B, 0);
-//    analogWrite(B_1A, 0);
-//    analogWrite(B_1B, 0);
-//    digitalWrite(led_1,LOW);
-//    break;
-//  }
+ char cmd = bluetoothSerial.read();
+ switch (cmd)
+ {
+   case 'f':
+   digitalWrite(led_1,LOW);
+   analogWrite(A_1A, motorASpeed);
+   analogWrite(A_1B, 0);
+   analogWrite(B_1A, motorBSpeed);
+   analogWrite(B_1B, 0);
+   break;
+   case 'b':
+   digitalWrite(led_1,LOW);
+   analogWrite(A_1A, 0);
+   analogWrite(A_1B, motorASpeed);
+   analogWrite(B_1A, 0);
+   analogWrite(B_1B, motorBSpeed);
+   break;
+   case 'r':
+   digitalWrite(led_1,HIGH);
+   analogWrite(A_1A, 0);
+   analogWrite(A_1B, 0);
+   analogWrite(B_1A, motorBSpeed);
+   analogWrite(B_1B, 0);
+   break;
+   case 'l':
+   analogWrite(A_1A, motorASpeed);
+   analogWrite(A_1B, 0);
+   analogWrite(B_1A, 0);
+   analogWrite(B_1B, 0);
+   digitalWrite(led_1,HIGH);
+   break;
+   case 's':
+   analogWrite(A_1A, 0);
+   analogWrite(A_1B, 0);
+   analogWrite(B_1A, 0);
+   analogWrite(B_1B, 0);
+   digitalWrite(led_1,LOW);
+   break;
+ }
 }
 
 float getDistanceCM()
